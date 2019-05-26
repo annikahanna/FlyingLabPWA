@@ -6,7 +6,9 @@ const routes: Routes = [
     path: '',
     loadChildren: './home/home.module#HomePageModule'
   },
-  { path: 'categories', loadChildren: './categories/categories.module#CategoriesPageModule' }
+  { path: 'categories', loadChildren: './categories/categories.module#CategoriesPageModule' },  { path: 'chat', loadChildren: './chat/chat.module#ChatPageModule' },
+  { path: 'chat', loadChildren: './chat/chat.module#ChatPageModule' }
+
 ];
 
 @NgModule({

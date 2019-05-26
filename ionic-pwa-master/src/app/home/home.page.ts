@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
+import { Socket } from 'ng-socket-io';
+import { ParamServiceService } from '../param-service.service';
 
 @Component({
   selector: 'app-home',
@@ -11,10 +13,13 @@ export class HomePage implements OnInit{
   deferredPrompt: any;
   showInstallBtn: boolean = true;
   pwa_features: any;
+  nickname = '';
 
   constructor(
     private http: HttpClient,
-    private router: Router
+    private router: Router,
+    private socket: Socket,
+    private paramService: ParamServiceService
   ) {
 
     window.addEventListener('beforeinstallprompt', (e) => {
@@ -60,6 +65,17 @@ export class HomePage implements OnInit{
 
   goToDetailsView(item){
     this.router.navigate(["/details", item.slug]);
+  }
+
+    joinChat() {
+
+        this.socket.connect();
+        this.socket.emit('set-nickname', this.nickname);
+
+        this.paramService.setDestn({ nickname: this.nickname })
+        this.router.navigate(['/chat'] )
+
+
   }
 
 }

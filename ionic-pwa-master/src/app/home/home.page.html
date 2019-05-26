@@ -12,5 +12,14 @@
         </ion-slide>
     </ion-slides>
     <ion-button expand="full">Take the ride</ion-button>
+    <!--ChatRoomStuff-->
+    <ion-item>
+        <ion-label stacked>Set Nickname</ion-label>
+        <ion-input type="text" [(ngModel)]="nickname" placeholder="Nickname"></ion-input>
+    </ion-item>
+    <button ion-button full (click)="joinChat()" [disabled]="nickname === ''" [routerLink]="['/chat']">Join Chat as {{ nickname }}</button>
 
 </ion-content>
+
+<ion-footer><button ion-button full (click)="joinChat()" [disabled]="nickname === ''" [routerLink]="['/chat']">Join Chat as {{ nickname }}</button>
+</ion-footer>
