@@ -1,0 +1,74 @@
+<ion-content>
+
+    <ion-grid>
+        <ion-row>
+            <ion-col>
+
+                <ion-avatar>
+                    <img src='../../assets/icon/hackdays.webp'>
+                </ion-avatar>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                <h4>Awesome Hackdays Chat</h4>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-card class="question">
+                <ion-card-header>
+                    <ion-card-title>How many hours did you sleep last night?</ion-card-title>
+                </ion-card-header>
+            </ion-card>
+        </ion-row>
+        <ion-row *ngFor="let message of messages">
+            <ion-col>
+                <ng-template [ngIf]="message.from !== nickname" class="messageStranger">
+                    <ion-card class="messageStranger">
+                        <ion-card-header>
+                            <ion-card-subtitle>{{ message.from }}</ion-card-subtitle>
+                        </ion-card-header>
+                        <ion-card-content>
+
+                            {{ message.text }}
+                        </ion-card-content>
+                    </ion-card>
+
+                </ng-template>
+            </ion-col>
+            <ion-col>
+
+                <ng-template [ngIf]="message.from === nickname" class="Mymessage">
+                    <ion-card class="Mymessage">
+                        <ion-card-header>
+                            <ion-card-subtitle>{{ message.from }}</ion-card-subtitle>
+                        </ion-card-header>
+
+                        <ion-card-content>
+
+                            {{ message.text }}
+                        </ion-card-content>
+                    </ion-card>
+                </ng-template>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
+</ion-content>
+
+<ion-footer>
+    <ion-toolbar>
+        <ion-row class="message_row">
+            <ion-col >
+                <ion-item no-lines>
+                    <ion-input type="text" placeholder="Message" [(ngModel)]="message"></ion-input>
+                </ion-item>
+            </ion-col>
+            <ion-col >
+                <ion-button (click)="sendMessage()" [disabled]="message === ''">
+                    Send
+                </ion-button>
+            </ion-col>
+        </ion-row>
+    </ion-toolbar>
+</ion-footer>

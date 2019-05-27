@@ -1,16 +1,37 @@
 <ion-content padding>
-  <ion-slides pager="true">
-    <ion-slide>
-      <h1>Welcome</h1>
-      <p>Are you ready to connect with outer passengers?</p>
-    </ion-slide>
-    <ion-slide>
-      <h1>Slide blaaaa</h1>
-    </ion-slide>
-    <ion-slide>
-      <h1>Slide 3</h1>
-    </ion-slide>
-  </ion-slides>
-  <ion-button expand="full">Take the ride</ion-button>
+    <h3>What would you like to chat about?</h3>
+
+    <ion-grid>
+        <ion-row>
+            <ion-col>
+                <ion-img src='../../assets/Kacheln_Bilder/Inactive/frankfurt.png' >
+                </ion-img>
+            </ion-col>
+            <ion-col>
+                <ion-img src='../../assets/Kacheln_Bilder/Inactive/hack.png' ></ion-img>
+            </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <ion-col>
+                <ion-img src='../../assets/Kacheln_Bilder/Inactive/tech.png' ></ion-img>
+            </ion-col>
+            <ion-col>
+                <ion-img src='../../assets/Kacheln_Bilder/Inactive/food.png'></ion-img>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                <ion-item>
+                    <ion-input type="text" [(ngModel)]="nickname" placeholder="Nickname"></ion-input>
+                </ion-item>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
+    <ion-button  (click)="joinChat()" [disabled]="nickname === ''" [routerLink]="['/chat']" class="bottom">Join Chat as {{ nickname }}</ion-button>
+
+
+    <!--ChatRoomStuff-->
 
 </ion-content>

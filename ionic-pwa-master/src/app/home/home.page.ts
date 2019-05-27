@@ -30,6 +30,7 @@ export class HomePage implements OnInit{
   }
 
   ngOnInit(){
+    this.showInstallBanner();
     this.http.get("/assets/data.json")
     .subscribe(
       res => this.pwa_features = res["pwa_features"]

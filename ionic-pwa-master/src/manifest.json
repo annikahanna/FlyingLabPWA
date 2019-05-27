@@ -1,8 +1,8 @@
 {
-  "name": "Ionic PWA",
-  "short_name": "Ionic PWA",
-  "theme_color": "#1976d2",
-  "background_color": "#fafafa",
+  "name": "FlightXchange",
+  "short_name": "FlightXchange",
+  "theme_color": "#FFAD02",
+  "background_color": "#03123F",
   "display": "standalone",
   "scope": "/",
   "start_url": "/",

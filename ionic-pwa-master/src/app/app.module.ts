@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, RouteReuseStrategy, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 
-import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
+import {IonicModule, IonicRouteStrategy, NavController, ToastController} from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 
@@ -15,6 +15,10 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFireMessagingModule } from '@angular/fire/messaging';
 
 import { environment } from '../environments/environment';
+import {SocketIoConfig, SocketIoModule} from "ng-socket-io";
+import {ParamServiceService} from "../param-service.service";
+
+const config: SocketIoConfig = {url: 'https://hackathonfrankfurt.herokuapp.com/', options: {}};
 
 @NgModule({
   declarations: [AppComponent],
@@ -24,16 +28,21 @@ import { environment } from '../environments/environment';
     HttpClientModule,
     IonicModule.forRoot(),
     AppRoutingModule,
+    SocketIoModule.forRoot(config),
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireMessagingModule,
-    ServiceWorkerModule.register('combined-sw.js', { enabled: environment.production })
+    ServiceWorkerModule.register('combined-sw.js', {enabled: environment.production})
     // ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
+    ToastController,
+    ParamServiceService,
+    NavController,
+    {provide: RouteReuseStrategy, useClass: IonicRouteStrategy}
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule {
+}

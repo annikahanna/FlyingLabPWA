@@ -1,0 +1,68 @@
+@font-face {
+  font-family: LufthansaHead-Bold;
+  src: url("../../assets/fonts/LufthansaHead-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: LufthansaHead-Light;
+  src: url("../../assets/fonts/LufthansaHead-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: LufthansaHead-Thin;
+  src: url("../../assets/fonts/LufthansaHead-Thin.otf") format("opentype");
+}
+
+@font-face {
+  font-family: LufthansaText-Regular;
+  src: url("../../assets/fonts/LufthansaText-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: LufthansaText-Light;
+  src: url("../../assets/fonts/LufthansaText-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: LufthansaText-Bold;
+  src: url("../../assets/fonts/LufthansaText-Bold.otf") format("opentype");
+}
+
+ion-content {
+  --background: none;
+
+  ion-img{
+    width: 160px;
+    height: 160px;
+    margin-right: 10px;
+  }
+
+  ion-button {
+    font-family: LufthansaHead-Bold;
+
+    position: page;
+    width: 350px;
+    bottom: 10px;
+    right: 15px;
+    left: 15px
+  }
+
+  ion-label{
+    font-family: LufthansaText-Regular;
+  }
+
+  ion-input{
+    font-family: LufthansaText-Regular;
+
+  }
+
+
+
+  h3{
+    font-family: LufthansaHead-Bold;
+    font-size: 28px;
+    color: #03123F;
+    letter-spacing: -0.27px;
+  }
+
+}

@@ -1,16 +1,22 @@
 <ion-content padding>
-    <ion-slides pager="true">
+    <ion-slides pager="false">
         <ion-slide>
-            <h1>Welcome</h1>
-            <h2>Are you ready to connect with outer passengers?</h2>
+            <table>
+                <tr>
+                    <td><h1>Welcome</h1></td>
+                </tr>
+                <tr>
+                    <td><h2>Are you ready to connect with other passengers?</h2></td>
+                </tr>
+            </table>
         </ion-slide>
         <ion-slide>
-            <h1>Slide blaaaa</h1>
+            <h1>More cool stuff is coming soon</h1>
         </ion-slide>
         <ion-slide>
-            <h1>Slide 3</h1>
+            <h1>Keep on Track</h1>
         </ion-slide>
     </ion-slides>
-    <ion-button expand="full">Take the ride</ion-button>
+    <ion-button expand="full"  [routerLink]="['/categories']">Take the ride</ion-button>
 
 </ion-content>

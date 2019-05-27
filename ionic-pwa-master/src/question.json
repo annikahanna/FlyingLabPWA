@@ -1,0 +1,80 @@
+{
+  "FrankfurtJTechnologyJFoodJHackdaysJ": [
+    "What shopping recommendations do you have for Frankfurt?",
+    "What was the greatest holiday you ever had?",
+    "How many hours did you sleep last night?"
+  ],
+  "FrankfurtJTechnologyJFoodJHackdaysN": [
+    "What did you do before Google maps?",
+    "What is the best food you ever had on vacation?",
+    "Windows or Mac or Linux?"
+  ],
+  "FrankfurtJTechnologyJFoodNHackdaysN": [
+    "What travel gadgets do you use?",
+    "What did you do before Google maps existed?",
+    "What is your favorite way to get around in Frankfurt (transportation/mobility)?"
+  ],
+  "FrankfurtJTechnologyJFoodNHackdaysJ": [
+    "What travel gadgets do you use?",
+    "What did you do before Google maps existed?",
+    "What is the best technology event you know?"
+  ],
+  "FrankfurtJTechnologyNFoodJHackdaysN": [
+    "What restaurants or bars in Frankfurt can you recommend?",
+    "What beer to drink and where?",
+    "Have you heard about the Frankfurter “grüne Soße”?"
+  ],
+  "FrankfurtJTechnologyNFoodJHackdaysJ": [
+    "What was your favorite food during the Hackdays?",
+    "How did you like Sissis’ legendary Currywurst during the Hackdays?"
+  ],
+  "FrankfurtJTechnologyNFoodNHackdaysN": [
+    "Have you heard about the Frankfurter “grüne Soße”?",
+    "What helpful information can you share about Frankfurt?",
+    "Where to get good views on the city skyline?",
+    "Have you seen the Eintracht Frankfurt Bundesliga games? Any opinion?"
+  ],
+  "FrankfurtJTechnologyNFoodNHackdaysJ": [
+    "How many hours did you sleep last night?",
+    "Where to get good views on the city skyline?",
+    "Which company should be part of Hackdays?"
+  ],
+  "FrankfurtNTechnologyJFoodJHackdaysJ": [
+    "What did you do before Google maps existed?",
+    "Who is the most interesting person you've met?",
+    "What is the biggest technology trend for 2020?"
+  ],
+  "FrankfurtNTechnologyJFoodJHackdaysN": [
+    "What do you think about 3D-printed food?",
+    "What impact will robo-waiters have on restaurants?",
+    "What travel gadgets do you use?"
+  ],
+  "FrankfurtNTechnologyJFoodNHackdaysJ": [
+    "Windows or Mac?",
+    "What is the biggest technology trend for 2020?",
+    "What is the best technology event you know?"
+  ],
+  "FrankfurtNTechnologyJFoodNHackdaysN": [
+    "Windows or Mac?",
+    "What travel gadgets do you use?",
+    "What is the biggest technology trend for 2020?"
+  ],
+  "FrankfurtNTechnologyNFoodJHackdaysJ": [
+    "What was your favorite food during the Hackdays?",
+    "How did you like Sissis’ legendary Currywurst during the Hackdays?"
+  ],
+  "FrankfurtNTechnologyNFoodJHackdaysN": [
+    "What restaurants or bars in Frankfurt can you recommend?",
+    "What German dishes can you recommend?",
+    "What is best, Asian food or Italian food?"
+  ],
+  "FrankfurtNTechnologyNFoodNHackdaysJ": [
+    "How many hours did you sleep last night?",
+    "Which company should be part of Hackdays?",
+    "Do you plan on coming to the Hackdays in Hamburg?"
+  ],
+  "FrankfurtNTechnologyNFoodNHackdaysN": [
+    "Just go ahead and ask whatever is on your mind",
+    "What topic is not talked about enough?"
+  ]
+}

@@ -28,34 +28,37 @@
   src: url("../../assets/fonts/LufthansaText-Bold.otf") format("opentype");
 }
 
-ion-content{
+ion-content {
   --background: url('../../assets/images/Background.jpeg');
   background-position: top;
   background-size: cover;
 
-  ion-slide{
-    height: 510px;
-    bottom: 30px;
+  ion-slide {
+    height: 400px;
+
+table{
+  position: center;
+}
+
+    h1 {
+      font-family: LufthansaHead-Bold;
+      font-size: 45px;
+      color: #FFFFFF;
+      letter-spacing: -0.43px;
+      line-height: 54px;
+
+    }
+
+    h2 {
+      font-family: LufthansaHead-Light;
+      font-size: 45px;
+      color: #FFFFFF;
+      letter-spacing: -0.43px;
+      line-height: 54px;
+    }
   }
 
-  h1{
-    font-family: LufthansaHead-Bold;
-    font-size: 45px;
-    color: #FFFFFF;
-    letter-spacing: -0.43px;
-    line-height: 54px;
-
-  }
-
-  h2{
-    font-family: LufthansaHead-Light;
-    font-size: 45px;
-    color: #FFFFFF;
-    letter-spacing: -0.43px;
-    line-height: 54px;
-  }
-
-  ion-button{
+  ion-button {
     position: absolute;
     bottom: 10px;
     right: 15px;
